@@ -1,3 +1,11 @@
-library('Jenkins-Shared-Libraries@master')
+@Library('Jenkins-Shared-Libraries@master') _
 
-cicd{ }
+node {
+    stage('First Stage'){
+        firstStage.call()
+    }
+
+    stage('Second Stage'){
+        secondStage.call()
+    }
+}
