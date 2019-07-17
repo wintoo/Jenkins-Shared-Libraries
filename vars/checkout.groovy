@@ -1,5 +1,9 @@
+def repoUrl = "https://github.com/wintoo/maven-simple.git"
+def BRANCH_NAME = 'dev'
+
 def call(){
     stage('SCM Checkout'){
-        echo 'Checking out repo'
+        echo "Building branch ${env.BRANCH_NAME}"
+        git url: repoUrl, branch: BRANCH_NAME
     }
-}
+}   
