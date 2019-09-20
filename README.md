@@ -1,2 +1,2 @@
 # Jenkins-Shared-Libraries
-Scripts for Deployment are stored in this repository
+hosting jenkins scripts here
